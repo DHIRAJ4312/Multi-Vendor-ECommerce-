@@ -1,0 +1,1 @@
+-- Useful extra indexes (beyond JPA annotations) can go here if needed
