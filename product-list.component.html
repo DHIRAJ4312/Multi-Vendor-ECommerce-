@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Products</h2>
+  <div *ngIf="page?.content?.length; else empty">
+    <div *ngFor="let p of page.content" class="card" style="margin:8px; padding:8px;">
+      <div><b>{{p.name}}</b></div>
+      <div>₹{{p.price}}</div>
+      <div>Stock: {{p.stock}}</div>
+    </div>
+  </div>
+  <ng-template #empty>No products yet.</ng-template>
+</div>
