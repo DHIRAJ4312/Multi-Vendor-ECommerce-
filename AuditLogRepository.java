@@ -1,0 +1,1 @@
+package com.example.mv.audit; import org.springframework.data.jpa.repository.*; public interface AuditLogRepository extends JpaRepository<AuditLog, Long>{}
