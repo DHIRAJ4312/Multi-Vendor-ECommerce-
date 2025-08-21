@@ -1,0 +1,1 @@
+package com.example.mv.vendor; import org.springframework.data.jpa.repository.*; import java.util.*; public interface VendorRepository extends JpaRepository<Vendor, Long>{ Optional<Vendor> findByUserId(Long uid);}

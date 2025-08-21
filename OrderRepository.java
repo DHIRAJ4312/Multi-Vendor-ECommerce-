@@ -1,0 +1,1 @@
+package com.example.mv.order; import org.springframework.data.jpa.repository.*; import org.springframework.data.domain.*; public interface OrderRepository extends JpaRepository<Order, Long>{ Page<Order> findByUserId(Long uid, Pageable p);}

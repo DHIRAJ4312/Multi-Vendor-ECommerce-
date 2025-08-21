@@ -1,0 +1,1 @@
+package com.example.mv.catalog; import org.springframework.data.jpa.repository.*; import org.springframework.data.domain.*; public interface ReviewRepository extends JpaRepository<Review, Long>{ Page<Review> findByProductId(Long productId, Pageable p);}

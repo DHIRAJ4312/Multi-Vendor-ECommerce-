@@ -1,0 +1,1 @@
+package com.example.mv.catalog; import org.springframework.data.jpa.repository.*; import org.springframework.data.domain.*; public interface ProductRepository extends JpaRepository<Product, Long>, JpaSpecificationExecutor<Product>{ Page<Product> findByCategory_Slug(String slug, Pageable pageable);}
